@@ -1,6 +1,6 @@
 # PROTÓTIPO DE UM SISTEMA DE PRESCRIÇÃO MÉDICA
 
-Este protótipo de sistema de prescrição médica eletrônica foi tema do meu artigo cientifico da disciplina de Projeto Final 2. Foi desenvolvido visando solucionar os problemas associados ao processo manual, como ilegibilidade, risco de perda, fraudes e redução do uso de papel.
+Este protótipo de sistema de prescrição médica eletrônica foi desenvolvido como parte do meu artigo científico na disciplina de Projeto Final. Seu objetivo principal foi reduzir as limitações do processo manual de prescrição, como problemas de ilegibilidade, risco de perda de documentos, vulnerabilidade a fraudes e redução do uso de papel.
 
 **Os principais requisitos funcionais do protótipo do sistema são:**
 
