@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="receita_medica" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="23ebfa81-ca39-4fda-ab28-1ce2f6f329d2">
+	<property name="ireport.zoom" value="1.053325017224323"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idreceita" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from tb_receitas where idReceita=$P{idreceita}]]>
+	</queryString>
+	<field name="idReceita" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomepaciente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idade" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rg" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpf" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medicamento1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medicamento2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medicamento3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="medicamento4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dpt1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dpt2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dpt3" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dpt4" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="observacoes" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nomemedico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="crm" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clinica" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datareceita" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="especialidademedico" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="enderecoclinica" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="assinaturaqrcode" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="30" splitType="Stretch">
+			<staticText>
+				<reportElement x="210" y="1" width="132" height="29" uuid="5900a7a4-206d-4fa8-b9cf-746de89cef35"/>
+				<textElement>
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Receita Médica]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="23" width="555" height="1" uuid="1d6f1f39-6015-4f78-acc7-f95b347cb194"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="dbf20572-9f0a-4182-8b87-4370415e53bd"/>
+			</line>
+			<line>
+				<reportElement x="555" y="0" width="1" height="24" uuid="e7c84c50-2833-40be-a319-48e1182a41d3"/>
+			</line>
+			<line>
+				<reportElement x="0" y="1" width="1" height="22" uuid="89b1449e-57bb-4e1b-8370-e363b9c1bcf1"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="94" splitType="Stretch">
+			<image>
+				<reportElement x="0" y="0" width="99" height="90" uuid="7f90014e-26bb-4e5f-bd98-c5d07e8acda3"/>
+				<imageExpression><![CDATA["D:\\Tcc 2025\\Sistema_PF2\\ReceitaEletronica\\src\\Visao\\figuras\\logo4.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="99" y="0" width="41" height="14" uuid="6d773456-1220-4754-ba30-cd6c30d72868"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Clinica:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="14" width="53" height="14" uuid="5ee8c888-2728-429a-81c5-60d1f2829e83"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Endereço:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="48" width="53" height="14" uuid="cf94e791-d5fb-4f7d-a799-9e43407bde83"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Médico(a):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="62" width="73" height="14" uuid="6ea03c90-2bba-444d-ad6f-2e21988ed17e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Especialidade:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="76" width="29" height="14" uuid="ef35c821-c36a-4115-b83f-c58e3d982478"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[CRM:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="377" y="76" width="86" height="14" uuid="7ba2cd8c-854f-4e3a-8272-3a56e6739ce8"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data de Emissão:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="135" y="0" width="140" height="14" uuid="730c42a2-a745-485e-9267-62a439983f60"/>
+				<textFieldExpression><![CDATA[$F{clinica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="461" y="76" width="105" height="14" uuid="a3b21e01-ceb7-4929-a85d-3494f5a633bc"/>
+				<textFieldExpression><![CDATA[$F{datareceita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="48" width="190" height="20" uuid="da27fdc6-34d7-4f5a-8f5c-caab65c55019"/>
+				<textFieldExpression><![CDATA[$F{nomemedico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="126" y="76" width="100" height="14" uuid="a86de032-01e1-483f-83bf-4677f58d67c3"/>
+				<textFieldExpression><![CDATA[$F{crm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="14" width="231" height="20" uuid="2468a1c4-89fa-40b1-8b93-243913297704"/>
+				<textFieldExpression><![CDATA[$F{enderecoclinica}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="172" y="62" width="222" height="20" uuid="b20a53a5-547a-4c5e-9f1a-582a8583d672"/>
+				<textFieldExpression><![CDATA[$F{especialidademedico}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="39" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="9" width="555" height="1" uuid="812aaf59-2d00-45a9-9be7-0adc87c66945"/>
+			</line>
+			<line>
+				<reportElement x="554" y="9" width="1" height="24" uuid="20a123a7-685b-4d21-9c0a-7652ca985e69"/>
+			</line>
+			<line>
+				<reportElement x="0" y="10" width="1" height="24" uuid="3b976ab6-423e-4800-ac01-275d64a4e132"/>
+			</line>
+			<line>
+				<reportElement x="1" y="33" width="554" height="1" uuid="017919e3-79d2-4758-909c-a3c59480e351"/>
+			</line>
+			<staticText>
+				<reportElement x="1" y="10" width="49" height="23" uuid="8f7e2977-b2ef-4491-9402-a2d96920c125"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paciente:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="463" y="9" width="41" height="24" uuid="dd64232f-e5be-45a6-b6a0-2f6fd305b3b7"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Idade:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="52" y="14" width="258" height="20" uuid="dc126bef-2ef1-430a-a278-78599cd2597a"/>
+				<textFieldExpression><![CDATA[$F{nomepaciente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="493" y="14" width="49" height="20" uuid="b2ed8d41-1e5a-49e5-8d48-d7dce5d70df1"/>
+				<textFieldExpression><![CDATA[$F{idade}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="458" splitType="Stretch">
+			<elementGroup/>
+			<staticText>
+				<reportElement x="1" y="10" width="71" height="14" uuid="98ba1694-57ec-4fea-b088-6c6b22a727a5"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Prescrição nº:
+
+in Ciberdúvidas da Língua Portuguesa, https://ciberduvidas.iscte-iul.pt/consultorio/perguntas/ainda-a-abreviacao-n/33689 [consultado em 20-04-2025]:]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="0" y="24" width="553" height="422" uuid="52de0863-0117-4e0b-a7f9-81edbb5bc718"/>
+			</rectangle>
+			<textField>
+				<reportElement x="16" y="46" width="519" height="20" uuid="99bb90e1-e2f2-477b-a7b5-c5e08a54092f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicamento1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="76" width="519" height="20" uuid="d95e0c8c-7a7d-473b-b470-3f2d76204038"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dpt1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="398" width="519" height="20" uuid="a94f5a35-3c09-4f4d-8d4a-8c77acc42956"/>
+				<textFieldExpression><![CDATA[$F{observacoes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="122" width="519" height="20" uuid="e4eb5aa5-e70b-4f75-8709-8950e927294f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicamento2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="153" width="519" height="20" uuid="c7d09096-975c-43cc-8d7d-acc6931bc638"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dpt2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="200" width="519" height="20" uuid="c21c0cc0-cbd1-4091-9317-21230a612e94"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicamento3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="230" width="519" height="20" uuid="036f637d-b294-4947-ab24-d7df98bc9112"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dpt3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="280" width="519" height="20" uuid="71b9874c-6b16-49bc-a44a-4797f34e67b7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{medicamento4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="311" width="519" height="20" uuid="5f24023b-e849-478f-884e-7b51337ff820"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dpt4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="72" y="10" width="100" height="14" uuid="f95d162c-bf7d-47b1-81c2-4a67bd0d8883"/>
+				<textFieldExpression><![CDATA[$F{idReceita}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="156" splitType="Stretch">
+			<image>
+				<reportElement x="420" y="0" width="152" height="156" uuid="43bc7f2e-c4e6-468a-804b-e2e9d6376680"/>
+				<imageExpression><![CDATA["D:\\Tcc 2025\\Sistema_PF2\\ReceitaEletronica\\qrcode\\" + $F{assinaturaqrcode} + "qrcode.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="-1" y="38" width="222" height="20" uuid="6b426ccf-1a97-45bc-bb23-8a4f2558ec6e"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Receituário assinado digitalmente por Dr(a):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="58" width="129" height="20" uuid="84e8dc5c-8c26-4ca2-9ff4-65a974b4bec6"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Data e hora da assinatura:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-1" y="108" width="357" height="20" uuid="843f768d-0074-4ece-9549-c2af26874674"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Assinatura em http://www.prescricaodigital.org.br/consulta-doc!sw=]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="78" width="401" height="30" uuid="4b229509-3460-4a67-932c-254f04f5ed36"/>
+				<textElement markup="none">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[A assinatura digital deste documento poderá ser verrificada em no seguinte endereço https://assinaturadigital.iti.gov.br]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="211" y="38" width="100" height="20" uuid="dee3bde3-279c-41a1-a1bf-98947bcffb63"/>
+				<textFieldExpression><![CDATA[$F{nomemedico}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="58" width="100" height="20" uuid="867ba06c-a8c7-41b3-9b64-360a32ee7fbf"/>
+				<textFieldExpression><![CDATA[$F{datareceita}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="322" y="108" width="98" height="20" uuid="2f333730-47d7-4342-8287-bd7d1e15e4a6"/>
+				<textFieldExpression><![CDATA[$F{assinaturaqrcode}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<staticText>
+				<reportElement x="229" y="1" width="127" height="20" uuid="5cb3d8dc-7d6d-426a-a15c-d54ffa0d2a9c"/>
+				<text><![CDATA[Versão do sistema 2.3.1]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
